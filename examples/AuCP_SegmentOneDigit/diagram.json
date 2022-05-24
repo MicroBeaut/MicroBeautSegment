@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "author": "Montree Hamarn",
+  "editor": "MicorBeaut",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 120, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": -56.03,
+      "left": 129,
+      "attrs": { "common": "anode" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 60,
+      "left": 104,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 60,
+      "left": 114,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 60,
+      "left": 124,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r5",
+      "top": 60,
+      "left": 134,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r6",
+      "top": 60,
+      "left": 144,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r7",
+      "top": 60,
+      "left": 159,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r8",
+      "top": 60,
+      "left": 169,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r9",
+      "top": 60,
+      "left": 179,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "uno:7", "r7:2", "gray", [ "v0" ] ],
+    [ "sevseg1:D", "r3:1", "orange", [ "v0" ] ],
+    [ "sevseg1:C", "r5:1", "green", [ "v0" ] ],
+    [ "r2:1", "sevseg1:E", "#8f4814", [ "h0" ] ],
+    [ "r4:1", "sevseg1:COM.1", "gold", [ "h0" ] ],
+    [ "r6:1", "sevseg1:B", "violet", [ "h-0.21", "v-19.09", "h8.55", "v-85.92", "h-8.32" ] ],
+    [ "r7:1", "sevseg1:A", "gray", [ "h0.01", "v-110.33", "h-21.31" ] ],
+    [ "r8:1", "sevseg1:F", "white", [ "h0.33", "v-116.99", "h-44.62" ] ],
+    [ "uno:6", "r8:2", "white", [ "v0" ] ],
+    [ "uno:5", "r9:2", "cyan", [ "v0" ] ],
+    [ "r9:1", "sevseg1:G", "cyan", [ "h-0.57", "v-125.02", "h-72.74" ] ],
+    [ "uno:12", "r2:2", "#8f4814", [ "v0" ] ],
+    [ "uno:11", "r3:2", "orange", [ "v0" ] ],
+    [ "uno:10", "r4:2", "gold", [ "v0" ] ],
+    [ "uno:9", "r5:2", "green", [ "v0" ] ],
+    [ "uno:8", "r6:2", "violet", [ "v0" ] ],
+    [ "uno:13", "sevseg1:DP", "blue", [ "v-106.25", "h60.07" ] ]
+  ]
+}
